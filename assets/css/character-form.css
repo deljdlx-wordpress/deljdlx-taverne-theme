@@ -1,0 +1,31 @@
+.character-form input.tab {
+  margin-bottom: 1rem;
+}
+
+input.tab::after {
+  color: #000;
+}
+
+
+.character-form input[type="text"] {
+  background-color: #fff;
+}
+
+.character-form textarea {
+  background-color: #fff;
+  width: 100%;
+}
+
+.character-form fieldset {
+  border: 1px solid #000;
+  background-color: #ccc8;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+
+.character-form .illustration {
+  margin-top: 1rem;
+  max-height: 200px;
+}

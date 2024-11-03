@@ -1,0 +1,6 @@
+.timeline-block .moon-phase {
+  position: absolute;
+  margin-top: -14px;
+  margin-left:-20px;
+  font-size: 2rem;
+}

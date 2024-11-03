@@ -1,0 +1,30 @@
+.character-section--home img{
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.character-section {
+  clear: both;
+}
+
+.character-section--home {
+  clear: both;
+}
+
+.character-section--home h2 {
+  column-span: all;
+}
+
+.character-section .main-illustration {
+  border: solid 1px #000;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #000;
+  /* expands 3 columns */
+  column-span: 2;
+  /* width: 100%; */
+  margin-bottom: 1rem;
+
+}
+

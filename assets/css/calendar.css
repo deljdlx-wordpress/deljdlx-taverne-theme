@@ -1,0 +1,108 @@
+table.calendar {
+  margin: 4px;
+  border-collapse: collapse;
+  border: solid 1px var(--color-main);
+}
+
+.day-of-week {
+  height: 30px;
+  width: 30px;
+}
+
+table.calendar .month {
+  background-color: var(--color-main);
+  color: var(--color-secondary);
+  font-weight: bold;  
+}
+
+
+table.calendar .day {
+  cursor: pointer;
+}
+
+
+table.calendar .day:hover span {
+  outline: solid 1px var(--color-interaction);
+  border-radius: 50%;
+}
+
+table.calendar .day span{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+
+table.calendar .day.has-event span {
+  border: solid 1px var(--color-main);
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+}
+
+table.calendar .day--0,
+table.calendar .day--6 {
+  background-color: #ccc;
+}
+
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events-list {
+  position: relative;
+}
+
+.events-list li {
+  background-color: #fff8;
+  border: solid 1px var(--color-main);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/*last element .events-list li*/
+.events-list li:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.events-list li .scenario {
+  font-weight: 700;
+}
+
+.events-list li h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events-list li h3 span {
+  font-weight: 700;
+}
+
+/* ================================================ */
+
+.tooltip-event {
+  border-bottom: 1px solid #fff;
+}
+.tooltip-event:last-child {
+  border-bottom: 0;
+}
+
+/* ================================================ */
+.timeline-date {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-event {
+  margin-bottom: 1rem;
+}
+
+.timeline-event-title {
+  font-weight: 700;
+}

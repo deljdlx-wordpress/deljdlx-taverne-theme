@@ -1,0 +1,53 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 8px 0 var(--color-main);
+}
+
+.card .illustration {
+  height: 200px;
+  background-size: cover;
+}
+
+.card .content {
+  padding: 1rem;
+}
+
+.card .edit-button {
+  position: absolute;
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+
+  align-items: center;
+  justify-content: center;
+
+
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #fff;
+  border: solid 1px var(--color-main);
+  border-radius: 50%;
+
+  box-shadow: 0 0 2px 0 var(--color-main);
+
+  transition: all 0.3s;
+}
+
+.card .edit-button:hover {
+  box-shadow: 3px 3px 4px 0 var(--color-main);
+}
+
+.card-place .illustration {
+  height: 200px;
+  background-size: cover;
+}
+
+.card-place .name {
+  padding: 2px 8px;
+}

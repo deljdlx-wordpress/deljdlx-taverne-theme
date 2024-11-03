@@ -1,0 +1,31 @@
+.singular .section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-main);
+  clear: both;
+}
+
+
+.section.characters-list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* .main-illustration {
+  float: left;
+  max-width: 500px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+} */
+
+.character-section .main-illustration{
+
+}
+
+
+
+
+.singular-jdlx_tav_scenario .main-illustration {
+  width: 100%;
+}
+

@@ -1,0 +1,246 @@
+{
+    "characterName": "xxxxxxxxxxxxxxx",
+    "characterAge": "xx",
+    "characterProfession": "xxxxxxxxxxxx",
+    "attributes": {
+        "perception": "5",
+        "force": "5",
+        "agilite": "5",
+        "constitution": "5",
+        "charisme": "5"
+    },
+    "cols": [
+        {
+            "clusters": {
+                "combat": {
+                    "name": "Combat",
+                    "details": "(AG+FO+PE)\/2",
+                    "skills": {
+                        "mains-nue": {
+                            "name": "Mains nues",
+                            "value": "0"
+                        },
+                        "armes-blanches": {
+                            "name": "Armes blanches",
+                            "value": 0
+                        },
+                        "armes-de-poing": {
+                            "name": "Armes de poing",
+                            "value": 0
+                        },
+                        "armes-de-jets": {
+                            "name": "Armes de jets",
+                            "value": 0
+                        },
+                        "fusils": {
+                            "name": "Fusils",
+                            "value": 0
+                        },
+                        "armes-lourdes": {
+                            "name": "Armes lourdes",
+                            "value": 0
+                        }
+                    }
+                },
+                "discretion": {
+                    "name": "Discr\u00e9tion",
+                    "details": "AG+(PE\/2)",
+                    "skills": {
+                        "infiltration": {
+                            "name": "Infiltration",
+                            "value": 0
+                        },
+                        "filature": {
+                            "name": "Filature",
+                            "value": 0
+                        },
+                        "crochetage": {
+                            "name": "Crochetage",
+                            "value": "40"
+                        },
+                        "vol-a-la-tire": {
+                            "name": "Vol \u00e0 la tire",
+                            "value": 0
+                        },
+                        "triche": {
+                            "name": "Triche",
+                            "value": 0
+                        }
+                    }
+                },
+                "physique": {
+                    "name": "Physique",
+                    "details": "(AG+CO+FO)\/3",
+                    "skills": {
+                        "sprint": {
+                            "name": "Sprint",
+                            "value": 0
+                        },
+                        "escalade": {
+                            "name": "Escalade",
+                            "value": 0
+                        },
+                        "nage": {
+                            "name": "Nage",
+                            "value": 0
+                        },
+                        "saut": {
+                            "name": "Saut",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "clusters": {
+                "technique": {
+                    "name": "Technique",
+                    "details": "PE",
+                    "skills": {
+                        "mecanique": {
+                            "name": "M\u00e9canique",
+                            "value": 0
+                        },
+                        "electronique": {
+                            "name": "Electronique",
+                            "value": 0
+                        },
+                        "medecine": {
+                            "name": "M\u00e9decine",
+                            "value": 0
+                        },
+                        "explosifs": {
+                            "name": "Explosifs",
+                            "value": 0
+                        }
+                    }
+                },
+                "artisanat": {
+                    "name": "Artisanat",
+                    "details": "(PE+AG)\/2",
+                    "skills": {
+                        "cuisine": {
+                            "name": "Cuisine",
+                            "value": 0
+                        },
+                        "couture": {
+                            "name": "Couture",
+                            "value": 0
+                        },
+                        "forge": {
+                            "name": "Forge",
+                            "value": 0
+                        },
+                        "bricolage": {
+                            "name": "Bricolage",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "clusters": {
+                "social": {
+                    "name": "Social",
+                    "details": "CH",
+                    "skills": {
+                        "negociation": {
+                            "name": "N\u00e9gociation",
+                            "value": 0
+                        },
+                        "intimidation": {
+                            "name": "Intimidation",
+                            "value": 0
+                        },
+                        "bluff": {
+                            "name": "Bluff",
+                            "value": 0
+                        },
+                        "seduction": {
+                            "name": "S\u00e9duction",
+                            "value": 0
+                        },
+                        "psychologie": {
+                            "name": "Psychologie",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "clusters": {
+                "survie": {
+                    "name": "Survie",
+                    "details": "CO+PE",
+                    "skills": {
+                        "orientation": {
+                            "name": "Orientation",
+                            "value": 0
+                        },
+                        "premiers-secours": {
+                            "name": "Premiers secours",
+                            "value": 0
+                        },
+                        "survie-en-milieu-hostile": {
+                            "name": "Survie en milieu hostile",
+                            "value": 0
+                        },
+                        "connaissance-du-milieu-urbain": {
+                            "name": "Connaissance du milieu urbain",
+                            "value": 0
+                        },
+                        "pistage": {
+                            "name": "Pistage",
+                            "value": 0
+                        },
+                        "dressage": {
+                            "name": "Dressage",
+                            "value": 0
+                        }
+                    }
+                },
+                "culture": {
+                    "name": "Culture",
+                    "details": "(PE+CH)\/2",
+                    "skills": {
+                        "histoire": {
+                            "name": "Histoire",
+                            "value": 0
+                        },
+                        "geographie": {
+                            "name": "G\u00e9ographie",
+                            "value": 0
+                        },
+                        "langues": {
+                            "name": "Langues",
+                            "value": 0
+                        },
+                        "chimie": {
+                            "name": "Chimie",
+                            "value": 0
+                        },
+                        "biologie": {
+                            "name": "Biologie",
+                            "value": 0
+                        },
+                        "esoterisme": {
+                            "name": "Esot\u00e9risme",
+                            "value": 0
+                        },
+                        "astrologie": {
+                            "name": "Astrologie",
+                            "value": 0
+                        },
+                        "antropologie": {
+                            "name": "Antropologie",
+                            "value": 0
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
