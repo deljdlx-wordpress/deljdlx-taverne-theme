@@ -1,0 +1,60 @@
+.taverne {
+
+    .menu-right {
+        background-color:var(--right-menu-background-color);
+
+        border-width: var(--right-menu-border-width);
+        border-radius: var(--right-menu-border-radius);
+        border-color: var(--right-menu-border-color);
+
+
+        // border-right: 1px solid var(--color-main);
+
+
+        width: 200px;
+        padding: var(--right-menu-padding);
+        position: fixed;
+        left: -200px;
+        top: 0;
+        transition: all 0.3s;
+        z-index: 100000;
+
+        min-height: 100vh;
+
+        @include respond(medium) {
+            display: block;
+            position: relative;
+            min-height: auto;
+            left: 0;
+        }
+
+        .menu-right__item {
+
+            border-color: var(--right-menu-block-border-color);
+            border-width: var(--right-menu-block-border-width);
+            border-radius: var(--right-menu-block-border-radius);
+            background-color: var(--right-menu-block-background-color);
+            padding: var(--right-menu-block-padding);
+
+
+            border-style: solid;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            // border-bottom: 1px solid var(--color-main);
+
+            ul {
+                list-style-type: none;
+                padding-left: 0rem;
+                margin-left: 0rem;
+                li {
+                    display: flex;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .menu-right.open {
+        left: 0;
+    }
+}

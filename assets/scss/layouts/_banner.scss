@@ -1,0 +1,56 @@
+.taverne {
+    .banner {
+        display: flex;
+        border-top: 1px solid var(--color-main);
+        border-bottom: 1px solid var(--color-main);
+        justify-content: space-between;
+        padding : 4px 8px;
+        font-size: 1.2rem;
+
+
+        .side-left {
+            display: flex;
+            & > * {
+                margin-left: 1rem;
+                padding-right: 1rem;
+                border-right: 1px solid var(--color-main);
+            }
+
+            & > *:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            & > *:first-child {
+                margin-left: 0;
+            }
+        }
+
+
+        .side-right {
+            display: flex;
+            .burger-trigger {
+                cursor: pointer;
+                color: var(--links-typography-color);
+                @include respond(medium) {
+                    display: none;
+                }
+            }
+
+            & > * {
+                margin-right: 1rem;
+                padding-left: 1rem;
+                border-left: 1px solid var(--color-main);
+            }
+
+            & > *:first-child {
+                border-left: none;
+                padding-left: 0;
+            }
+
+            & > *:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

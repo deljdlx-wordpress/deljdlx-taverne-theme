@@ -1,0 +1,17 @@
+.taverne {
+    .card {
+        border: var(--card-border-width) solid var(--card-border-color);
+        border-radius: var(--card-border-radius);
+        background-color: var(--card-background-color);
+
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s;
+        .card-title *{
+            color: var(--card-text-color);
+            font-size: var(--card-title-font-size);
+            padding: 0 4px;
+        }
+    }
+}

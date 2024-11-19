@@ -1,0 +1,18 @@
+.taverne {
+    header.main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        .site-title, .site-title * {
+            color: var(--site-main-title-typography-font-color);
+            font-family: var(--site-main-title-typography-font-family);
+            font-size: var(--site-main-title-typography-font-size);
+            font-weight: var(--site-main-title-typography-font-weight);
+            margin-top: var(--site-main-title-margin-top);
+            margin-bottom: var(--site-main-title-margin-bottom);
+        }
+    }
+
+}

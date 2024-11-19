@@ -1,0 +1,49 @@
+.select2.select2-container {
+  width: 100% !important;
+}
+
+.select2-dropdown {
+  top: 14px;
+}
+
+.select2-container--default .select2-selection--multiple {
+  padding: 4px!important;
+}
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  border-right: solid 1px #999 !important;
+  position: relative !important;
+  border-radius: 0 !important;
+}
+
+/* ========================================== */
+
+.taverne fieldset {
+  border: solid 1px var(--color-main);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #aaa8;
+}
+
+.taverne input[type="text"] {
+  /* width: 100%; */
+}
+
+
+
+/* ========================================== */
+
+.custom-field--relationship {
+  display: flex;
+  gap: 1rem;
+}
+
+.custom-field--relationship .panel {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.5rem;
+}
+
+
+/* ========================================== */

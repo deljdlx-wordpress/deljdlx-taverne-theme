@@ -1,0 +1,43 @@
+.taverne {
+
+    #header-image {
+        display: none;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .main-container {
+        background-color: var(--main-container-background-color);
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        // max-width: 1200px;
+
+        @include respond(medium) {
+            max-width: 100%;
+        }
+
+        @include respond(large) {
+            max-width: 1200px;
+        }
+    }
+
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+        min-height: 100vh;
+        // max-width: 1200px;
+
+        .content {
+            flex: 1;
+            max-width: 1200px;
+        }
+    }
+}
+

@@ -1,0 +1,64 @@
+body.taverne {
+    font-family: var(--theme-typography-font-family);
+    font-size: var(--theme-typography-font-size);
+    font-weight: var(--theme-typography-font-weight);
+    color: var(--theme-typography-font-color);
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-repeat: var(--background-repeat);
+    background-size: var(--background-size);
+
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    a {
+        font-family: var(--links-typography-font-family);
+        font-size: var(--links-typography-font-size);
+        font-weight: var(--links-typography-font-weight);
+        color: var(--links-typography-font-color);
+
+        &:hover {
+            text-shadow: 3px 3px 2px #0003;
+        }
+    }
+
+    p, li, div {
+        text-align: left;
+    }
+
+    p {
+        margin: 0 0 1rem 0;
+    }
+
+
+    .input, .textarea {
+        background-color: var(--form-components-background-color);
+        border-color: var(--form-components-border-color);
+        border-width: var(--form-components-border-width);
+
+        color: var(--form-components-font-color);
+        font-size: var(--form-components-font-size);
+        font-weight: var(--form-components-font-weight);
+        font-family: var(--form-components-font-family);
+
+        border-style: solid;
+    }
+
+    .label * {
+        color: var(--form-components-label-font-color);
+        font-size: var(--form-components-label-font-size);
+        font-weight: var(--form-components-label-font-weight);
+        font-family: var(--form-components-label-font-family);
+    }
+
+    // because daisy ui hide hr tags
+    *:not(li) > hr {
+        height: 0;
+        border-bottom: solid 1px;
+        margin: 1rem 0;
+    }
+}
+

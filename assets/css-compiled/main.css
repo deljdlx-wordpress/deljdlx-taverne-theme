@@ -1,0 +1,313 @@
+body.taverne {
+  font-family: var(--theme-typography-font-family);
+  font-size: var(--theme-typography-font-size);
+  font-weight: var(--theme-typography-font-weight);
+  color: var(--theme-typography-font-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: var(--background-repeat);
+  background-size: var(--background-size);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body.taverne a {
+  font-family: var(--links-typography-font-family);
+  font-size: var(--links-typography-font-size);
+  font-weight: var(--links-typography-font-weight);
+  color: var(--links-typography-font-color);
+}
+body.taverne a:hover {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+body.taverne p, body.taverne li, body.taverne div {
+  text-align: left;
+}
+body.taverne p {
+  margin: 0 0 1rem 0;
+}
+body.taverne .input, body.taverne .textarea {
+  background-color: var(--form-components-background-color);
+  border-color: var(--form-components-border-color);
+  border-width: var(--form-components-border-width);
+  color: var(--form-components-font-color);
+  font-size: var(--form-components-font-size);
+  font-weight: var(--form-components-font-weight);
+  font-family: var(--form-components-font-family);
+  border-style: solid;
+}
+body.taverne .label * {
+  color: var(--form-components-label-font-color);
+  font-size: var(--form-components-label-font-size);
+  font-weight: var(--form-components-label-font-weight);
+  font-family: var(--form-components-label-font-family);
+}
+body.taverne *:not(li) > hr {
+  height: 0;
+  border-bottom: solid 1px;
+  margin: 1rem 0;
+}
+
+.taverne #header-image {
+  display: none;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.taverne .main-container {
+  background-color: var(--main-container-background-color);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .taverne .main-container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .taverne .main-container {
+    max-width: 1200px;
+  }
+}
+.taverne .content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  min-height: 100vh;
+}
+.taverne .content-container .content {
+  flex: 1;
+  max-width: 1200px;
+}
+
+.taverne header.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.taverne header.main .site-title, .taverne header.main .site-title * {
+  color: var(--site-main-title-typography-font-color);
+  font-family: var(--site-main-title-typography-font-family);
+  font-size: var(--site-main-title-typography-font-size);
+  font-weight: var(--site-main-title-typography-font-weight);
+  margin-top: var(--site-main-title-margin-top);
+  margin-bottom: var(--site-main-title-margin-bottom);
+}
+
+.taverne .banner {
+  display: flex;
+  border-top: 1px solid var(--color-main);
+  border-bottom: 1px solid var(--color-main);
+  justify-content: space-between;
+  padding: 4px 8px;
+  font-size: 1.2rem;
+}
+.taverne .banner .side-left {
+  display: flex;
+}
+.taverne .banner .side-left > * {
+  margin-left: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid var(--color-main);
+}
+.taverne .banner .side-left > *:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.taverne .banner .side-left > *:first-child {
+  margin-left: 0;
+}
+.taverne .banner .side-right {
+  display: flex;
+}
+.taverne .banner .side-right .burger-trigger {
+  cursor: pointer;
+  color: var(--links-typography-color);
+}
+@media (min-width: 768px) {
+  .taverne .banner .side-right .burger-trigger {
+    display: none;
+  }
+}
+.taverne .banner .side-right > * {
+  margin-right: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--color-main);
+}
+.taverne .banner .side-right > *:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.taverne .banner .side-right > *:last-child {
+  margin-right: 0;
+}
+
+.taverne .menu-right {
+  background-color: var(--right-menu-background-color);
+  border-width: var(--right-menu-border-width);
+  border-radius: var(--right-menu-border-radius);
+  border-color: var(--right-menu-border-color);
+  width: 200px;
+  padding: var(--right-menu-padding);
+  position: fixed;
+  left: -200px;
+  top: 0;
+  transition: all 0.3s;
+  z-index: 100000;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .taverne .menu-right {
+    display: block;
+    position: relative;
+    min-height: auto;
+    left: 0;
+  }
+}
+.taverne .menu-right .menu-right__item {
+  border-color: var(--right-menu-block-border-color);
+  border-width: var(--right-menu-block-border-width);
+  border-radius: var(--right-menu-block-border-radius);
+  background-color: var(--right-menu-block-background-color);
+  padding: var(--right-menu-block-padding);
+  border-style: solid;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.taverne .menu-right .menu-right__item ul {
+  list-style-type: none;
+  padding-left: 0rem;
+  margin-left: 0rem;
+}
+.taverne .menu-right .menu-right__item ul li {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.taverne .menu-right.open {
+  left: 0;
+}
+
+.taverne .skill-tree-editor {
+  background-color: #ccc;
+  color: #00a;
+}
+.taverne .skill-tree-editor h1, .taverne .skill-tree-editor h2, .taverne .skill-tree-editor h3, .taverne .skill-tree-editor h4, .taverne .skill-tree-editor h5, .taverne .skill-tree-editor h6 {
+  color: #00a;
+}
+.taverne .skill-tree-editor a,
+.taverne .skill-tree-editor .jstree-contextmenu a {
+  color: #00a;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.taverne .skill-tree-editor fieldset {
+  padding: 4px;
+}
+
+.taverne .skill-tree-viewer {
+  max-width: 21cm;
+  margin: auto;
+  padding: 0.5cm;
+  border: solid 1px #aaa;
+  background-color: #fff;
+}
+.taverne .skill-tree-viewer h2 {
+  font-size: 1rem;
+}
+.taverne .skill-tree-viewer .container {
+  border: solid 1px oklch(var(--primary-color));
+  background-color: #fff;
+  padding: 4px;
+}
+.taverne .skill-tree-viewer .dropdown .dropdown-content {
+  z-index: 1000;
+}
+.taverne .skill-tree-viewer .tooltip-content {
+  width: 200px;
+  background-color: #ccc;
+  border: solid 1px oklch(var(--primary-color));
+  padding: 4px;
+  border-radius: 4px;
+}
+.taverne .skill-tree-viewer .attribute-container,
+.taverne .skill-tree-viewer .perk-container,
+.taverne .skill-tree-viewer .characteristic-container,
+.taverne .skill-tree-viewer .skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px oklch(var(--primary-color));
+  border-radius: 4px;
+  margin-bottom: 4px;
+  padding: 2px 4px;
+  background-color: #ddd;
+}
+.taverne .skill-tree-viewer .skills-container {
+  margin-top: 1rem;
+}
+.taverne .skill-tree-viewer .with-tooltip {
+  display: flex;
+  gap: 4px;
+}
+.taverne .skill-tree-viewer .value-container {
+  display: flex;
+  gap: 4px;
+  border: solid 1px oklch(var(--primary-color));
+  border-radius: 16px;
+  margin: 4px;
+  padding: 2px 4px;
+  background-color: #aaa;
+}
+.taverne .skill-tree-viewer .value-container .value-modifier {
+  border-radius: 50%;
+  width: 24px;
+}
+.taverne .skill-tree-viewer .value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  min-height: 24px;
+  border: solid 1px oklch(var(--primary-color));
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 11px;
+}
+.taverne .skill-tree-viewer .available-points-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.taverne .skill-tree-viewer .available-points-container .available-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  border: solid 1px oklch(var(--primary-color));
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 12px;
+  padding: 2px 16px;
+  font-weight: bold;
+}
+
+.taverne .card {
+  border: var(--card-border-width) solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+.taverne .card .card-title * {
+  color: var(--card-text-color);
+  font-size: var(--card-title-font-size);
+  padding: 0 4px;
+}

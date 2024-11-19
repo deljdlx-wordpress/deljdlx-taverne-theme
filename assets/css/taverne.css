@@ -1,0 +1,193 @@
+/* css variables */
+:root {
+  --color-main: #2E1510;
+  --color-secondary: #DBCA9A;
+  --color-interaction: #EF9995;
+}
+
+/* =================================================== */
+
+/* =================================================== */
+
+
+
+/* =================================================== */
+
+body.taverne .site-title,
+body.taverne .site-title a {
+  font-family: var(--site-title-font-family);
+  font-size: var(--site-title-font-size);
+  color: var(--site-title-font-color);
+  font-weight: var(--site-title-font-weight);
+  text-align: var(--site-title-text-align);
+  margin-bottom: var(--site-title-margin-bottom);
+  margin-top: var(--site-title-margin-top);
+  flex-grow: 1;
+}
+
+
+
+.taverne a.btn-neutral {
+  color: #fff;
+}
+
+
+
+
+
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-main);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+/* ======================================== */
+
+.taverne .modal-box {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.taverne .tab-content {
+  min-height: 300px;
+  width: 100%;
+}
+
+/* ======================================== */
+
+.taverne #modal_main .modal-action{
+  position: absolute;
+  top: -1rem;
+  right: 0.5rem;
+}
+
+
+
+
+
+/* ===================================== */
+
+
+h1.section-title-1 {
+  /* text-align: center; */
+  /* font-size: 3em !important; */
+  /* border-bottom: 1px solid var(--color-main); */
+}
+
+h1.main-title {
+  font-family: "Grenze Gotisch", serif;
+  font-size: 5rem;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+
+
+.edition-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.7rem;
+}
+
+
+
+
+
+
+.character-section {
+  display: block;
+
+  border-bottom: 1px solid var(--color-main);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.column-text {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.column-text--2 {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+
+.column-text h2 {
+  column-span: 3;
+}
+
+
+
+
+
+.character-toolbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-main);
+  border-top: 1px solid var(--color-main);
+  margin-bottom: 1rem;
+}
+
+.character-toolbar-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.character-toolbar-info > span::first-letter {
+  text-transform: uppercase;
+}
+
+
+
+.taverne .acf-label {
+  display: none;
+}
+
+.character-portrait {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid var(--color-main);
+}
+
+
+
+.map /*:not(.map-popup)*/ {
+
+}
+
+.leaflet-tile-pane {
+  filter: brightness(0.6) contrast(4) sepia(75%);
+}
+
+.map .map-popup {
+  filter: brightness(1.4) contrast(-4) sepia(0);
+}
+
+.taverne .leaflet-popup-content {
+  padding: 0;
+  margin: 8px;
+}
+
+.taverne .leaflet-popup-content {
+  padding: 0;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}

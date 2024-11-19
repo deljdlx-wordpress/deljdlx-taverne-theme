@@ -1,0 +1,202 @@
+:root {
+  --gutter: 0.5cm;
+}
+
+/* reset css */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: normal;
+} */
+
+.page.character-sheet {
+  background-color: #fff;
+}
+
+
+.page.character-sheet h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.page.character-sheet h3 {
+  font-weight: bold;
+}
+
+.page.character-sheet ul {
+  list-style-type: none;
+}
+
+
+.page.character-sheet .character-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page.character-sheet input {
+  background-color: #fff;
+  outline: 1px solid #000;
+  background-color: #ff03;
+}
+
+
+.page.character-sheet .page {
+  outline: 1px solid #000;
+  height: 297mm;
+  width: 210mm;
+  margin-top: 1cm;
+  padding: var(--gutter);
+}
+
+.page > header {
+  outline: solid 1px #aaa;
+  height: 5cm;
+  position: relative;
+
+}
+
+.page > main {
+  outline: solid 1px #aaa;
+  margin-top: var(--gutter);
+}
+
+.portrait {
+  background-image: url('https://picsum.photos/200/300');
+  background-size: cover;
+  width: 4cm;
+  height: 100%;
+  border: solid 1px #000;
+  display: none;
+}
+
+.character-infos {
+  margin-left: var(--gutter);
+  position: absolute;
+  top: 0;
+  left: 0cm;
+  width: 15cm;
+  height: 100%;
+}
+
+.pv-container {
+
+}
+
+.character-name {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.character-name input {
+  display: inline;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  width: auto;
+  text-align: left;
+}
+
+.character-info input {
+  border: none;
+  background-color: transparent;
+}
+
+.character-info input.character-age {
+  width: 1.52rem;
+}
+
+
+.character-attributes {
+  position: absolute;
+  top: 0;
+  left: 12cm;
+}
+
+.character-attribute {
+  width: 5cm;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #000;
+}
+.character-attribute:last-child {
+  border-bottom: none;
+}
+.character-attribute-name {
+  font-weight: bold;
+}
+.character-attribute-value {
+  width: 3rem;
+  text-align: right;
+}
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  height: 20cm;
+}
+
+.skills-container .col {
+  /* outline: solid 1px #f0f; */
+  width: 33%;
+  height: 100%;
+}
+
+.skill-cluster {
+  border: solid 1px #aaa;
+  padding: calc(var(--gutter) / 2);
+  margin: calc(var(--gutter) / 2);
+  margin-bottom: var(--gutter);
+}
+
+.skill-cluster h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid 1px #000;
+}
+
+.cluster-name {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.cluster-details {
+  /* font-weight: bold; */
+  font-size: 0.5rem;
+}
+
+.cluster-bonus {
+  font-weight: bold;
+  font-size: 0.8rem;
+  width: 3rem;
+  text-align: center;
+}
+
+.skill {
+  outline: solid 1px #aaa;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.skill-name {
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+}
+
+input.skill-value {
+  width: 3rem;
+  text-align: right;
+  /* border: none; */
+  border: solid 1px #aaa;
+}
+
+
+.chapter h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
