@@ -3,7 +3,6 @@
 use Deljdlx\WPForge\Theme\Theme;
 use Deljdlx\WPTaverne\Plugins\Taverne;
 use matthieumastadenis\couleur\ColorFactory;
-use matthieumastadenis\couleur\ColorSpace;
 
 // hide admin bar if not admin
 if(!current_user_can('administrator')) {
