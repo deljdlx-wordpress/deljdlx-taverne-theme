@@ -138,7 +138,7 @@
 .skills-container {
   display: flex;
   justify-content: space-between;
-  height: 20cm;
+  /* height: 20cm; */
 }
 
 .skills-container .col {

@@ -199,14 +199,18 @@ body.taverne *:not(li) > hr {
 .taverne .skill-tree-editor h1, .taverne .skill-tree-editor h2, .taverne .skill-tree-editor h3, .taverne .skill-tree-editor h4, .taverne .skill-tree-editor h5, .taverne .skill-tree-editor h6 {
   color: #00a;
 }
-.taverne .skill-tree-editor a,
-.taverne .skill-tree-editor .jstree-contextmenu a {
+.taverne .skill-tree-editor a {
   color: #00a;
   font-family: sans-serif;
   font-size: 1rem;
 }
 .taverne .skill-tree-editor fieldset {
   padding: 4px;
+}
+.taverne .jstree-contextmenu a {
+  color: #00a;
+  font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .taverne .skill-tree-viewer {

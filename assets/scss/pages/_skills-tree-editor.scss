@@ -1,6 +1,7 @@
 .taverne {
+    $colorMain: #00a;
+
     .skill-tree-editor {
-        $colorMain: #00a;
         background-color: #ccc;
         color: $colorMain;
 
@@ -8,8 +9,7 @@
             color: $colorMain;
         }
 
-        a,
-        .jstree-contextmenu a {
+        a {
             color: $colorMain;
             font-family: sans-serif;
             font-size: 1rem;
@@ -19,4 +19,11 @@
             padding: 4px;
         }
     }
+
+    .jstree-contextmenu a {
+        color: $colorMain;
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
 }

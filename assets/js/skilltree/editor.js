@@ -219,7 +219,10 @@ class SkilltreeEditor
         const response = await fetch('?', options);
         const json = await response.json();
         const skillTreeId = json.id;
-        document.querySelector('#skillTreeId').value = skillTreeId;
+        if(!document.querySelector('#skillTreeId').value) {
+            document.location = '?id=' + skillTreeId;
+        }
+        // document.querySelector('#skillTreeId').value = skillTreeId;
     }
 
     async handleIllustrationPaste() {

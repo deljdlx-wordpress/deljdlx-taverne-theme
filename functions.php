@@ -42,6 +42,10 @@ if(!function_exists('rgbaToOklch')) {
 }
 
 
+if(!class_exists(Taverne::class)) {
+    return;
+}
+
 
 
 if(!function_exists('wp_forge')) {
@@ -69,7 +73,7 @@ if(!function_exists('wp_forge')) {
             'https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css',
             'https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css',
 
-            'https://unpkg.com/leaflet@1.9.3/dist/leaflet.css',
+            'vendor/leaflet/leaflet.css',
 
             // fontawesome
             // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
@@ -79,7 +83,7 @@ if(!function_exists('wp_forge')) {
             'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css',
 
             // jquery-ui
-            'vendor/jquery-ui/jquery-ui.css',
+            'plugin://deljdlx-forge/vendor/jquery-ui/jquery-ui.css',
 
             // jsTree
             'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css',
@@ -124,7 +128,7 @@ if(!function_exists('wp_forge')) {
 
         $theme->addJs([
             // openstreetmap
-            'https://unpkg.com/leaflet@1.9.3/dist/leaflet.js',
+            'vendor/leaflet/leaflet.js',
             'https://cdn.tailwindcss.com',
             'https://cdn.jsdelivr.net/npm/toastify-js',
             // fontawesome
@@ -139,8 +143,8 @@ if(!function_exists('wp_forge')) {
             // 'https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js',
 
             // jquery
-            'vendor/jquery-ui/external/jquery/jquery.js',
-            'vendor/jquery-ui/jquery-ui.js',
+            'plugin://deljdlx-forge/vendor/jquery-ui/external/jquery/jquery.js',
+            'plugin://deljdlx-forge/vendor/jquery-ui/jquery-ui.js',
 
             // jsTree
             'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js',

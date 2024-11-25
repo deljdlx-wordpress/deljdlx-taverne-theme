@@ -70,6 +70,12 @@ initializeSkillTree = async function () {
             ]
         }],
 
+        // save() {
+        //     const json = JSON.stringify(this.values);
+        //     console.log('%calpine.js :: 75 =============================', 'color: #f00; font-size: 1rem');
+        //     console.log(json);
+        // },
+
         incrementValue(code, increment = 1, min = 0, max = 100) {
             if (typeof (this.values[code]) === 'undefined') {
                 this.values[code] = 0;
@@ -77,13 +83,18 @@ initializeSkillTree = async function () {
 
             if (increment > 0 && this.values[code] < max) {
                 this.values[code] += increment;
+                this.save();
+
                 return true;
             }
 
             if (increment < 0 && this.values[code] > min) {
                 this.values[code] += increment;
+                this.save();
+
                 return true;
             }
+
 
             return false;
         },
