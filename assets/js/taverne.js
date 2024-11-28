@@ -52,6 +52,21 @@ function moonPhases() {
 }
 
 
+function loading() {
+  console.log('%ctaverne.js :: 56 =============================', 'color: #f00; font-size: 1rem');
+  console.log("LOADING");
+  const loader = document.querySelector('#loader');
+  loader.classList.add('active');
+}
+
+function loaded() {
+  console.log('%ctaverne.js :: 63 =============================', 'color: #f00; font-size: 1rem');
+  console.log("LOADED");
+  const loader = document.querySelector('#loader');
+  loader.classList.remove('active');
+}
+
+
 // ===========================
 
 document.addEventListener('DOMContentLoaded', () => {
