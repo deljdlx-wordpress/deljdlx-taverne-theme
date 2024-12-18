@@ -1,5 +1,6 @@
 @import "base/variables";
 @import "base/tags";
+@import "base/typography";
 
 @import "layouts/default";
 @import "layouts/header";
@@ -8,8 +9,48 @@
 
 @import "pages/skills-tree-editor";
 @import "pages/skills-tree-viewer";
+@import "pages/character-form";
 
 
 
 @import "components/card";
 @import "components/loader";
+@import "components/sheet";
+
+
+.taverne {
+
+
+    table.datatable thead th {
+        color: #fff !important;
+    }
+
+    .select2-results__option {
+        color: #000;
+    }
+
+    .select2-selection__choice__display {
+        color: #000;
+    }
+
+
+    @media print {
+
+        .dt-column-order {
+            display: none !important;
+        }
+
+        .dt-layout-cell.dt-layout-start,
+        .dt-layout-cell.dt-layout-end
+        {
+            display: none !important;
+        }
+
+        .no-print {
+            display: none;
+        }
+    }
+}
+
+// select2-results__option--selectable select2-results__option--highlighted
+

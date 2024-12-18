@@ -2,13 +2,25 @@
     .skill-tree-viewer {
 
         max-width: 21cm;
-
         min-height: 29.7cm;
 
         margin: auto;
         padding: 0.5cm;
         border: solid 1px #aaa;
         background-color: #fff;
+
+
+        #loading-indicator {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right:0;
+        }
+
+        #loading-indicator.active {
+            display: block;
+        }
+
 
         h2 {
             font-size: 1rem;
@@ -101,6 +113,53 @@
                 font-size: 12px;
                 padding: 2px 16px;
                 font-weight: bold;
+            }
+        }
+
+
+        // print css
+        @media print {
+            padding: 0;
+            border: none;
+            background-color: #fff;
+            max-width: 20cm;
+            min-height: 27cm;
+
+            .no-print {
+                display: none;
+            }
+
+            .dropdown {
+                display: none;
+            }
+            .btn {
+                display: none;
+            }
+
+            .value-container {
+                border: none;
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+            }
+
+            .available-points-container {
+                display: none;
+            }
+
+            input[type="checkbox"] {
+                border: none;
+            }
+
+            // after checked checked input
+            input:checked:after {
+                content: "✅";
+                position: absolute;
+                margin-left: -4px;
+                margin-top: -7px;
+                font-size: 1.5rem;
+                color: var(--primary-color);
+
             }
         }
     }

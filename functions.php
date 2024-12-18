@@ -9,6 +9,12 @@ if(!current_user_can('administrator')) {
     add_filter('show_admin_bar', '__return_false');
 }
 
+if(!function_exists('acf_add_local_field_group')) {
+    return;
+}
+
+
+
 if(!function_exists('rgbaToOklch')) {
     // convert a rgba color to oklch
     function rgbaToOklch(string $hex)
@@ -55,8 +61,6 @@ if(!function_exists('wp_forge')) {
             return $theme;
         }
 
-        // $theme = new Theme('Taverne');
-
         $plugin = Taverne::getInstance();
         $theme = $plugin->getTheme();
 
@@ -67,25 +71,27 @@ if(!function_exists('wp_forge')) {
         ]);
 
 
-
         $theme->addCss([
+
+            'plugin://deljdlx-assets/assets/datatable/dataTable.min.css',
+
+
             'https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css',
+
+
             'https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css',
 
             'vendor/leaflet/leaflet.css',
 
             // fontawesome
-            // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
-            'vendor/font-awesome-pro/css/all.css',
+            'plugin://deljdlx-assets/assets/font-awesome-pro/css/all.css',
 
             // select2
             'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css',
 
             // jquery-ui
-            'plugin://deljdlx-forge/vendor/jquery-ui/jquery-ui.css',
+            'plugin://deljdlx-assets/assets/jquery-ui/jquery-ui.css',
 
-            // jsTree
-            'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css',
 
             // dynamic css
             '/css/custom.css',
@@ -126,6 +132,7 @@ if(!function_exists('wp_forge')) {
 
 
         $theme->addJs([
+            'plugin://deljdlx-assets/assets/datatable/dataTable.min.js',
             // openstreetmap
             'vendor/leaflet/leaflet.js',
             'https://cdn.tailwindcss.com',
@@ -142,11 +149,9 @@ if(!function_exists('wp_forge')) {
             // 'https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js',
 
             // jquery
-            'plugin://deljdlx-forge/vendor/jquery-ui/external/jquery/jquery.js',
-            'plugin://deljdlx-forge/vendor/jquery-ui/jquery-ui.js',
 
-            // jsTree
-            'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js',
+            // 'plugin://deljdlx-assets/assets/jquery/jquery.js',
+            // 'plugin://deljdlx-assets/assets/jquery-ui/jquery-ui.js',
 
 
             // select2

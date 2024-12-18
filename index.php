@@ -8,7 +8,16 @@
 use Deljdlx\WPTaverne\Models\Relation;
 use Deljdlx\WPTaverne\Plugins\Taverne;
 
-Taverne::run();
+try {
+    $return =  Taverne::run();
+    echo $return;
+}
+catch(\Exception $e) {
+    dump($e);
+    ob_end_flush();
+}
+
+// return $return;
 
 
 // echo __FILE__.':'.__LINE__; exit();

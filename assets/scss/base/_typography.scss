@@ -1,0 +1,11 @@
+.taverne {
+    .column-text {
+        column-count: 1;
+        @include respond(medium) {
+            column-count: 2;
+        }
+        @include respond(large) {
+            column-count: 3;
+        }
+    }
+}

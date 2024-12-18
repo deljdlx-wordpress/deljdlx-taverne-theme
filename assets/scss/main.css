@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body.taverne {
   font-family: var(--theme-typography-font-family);
   font-size: var(--theme-typography-font-size);
@@ -47,6 +48,23 @@ body.taverne *:not(li) > hr {
   height: 0;
   border-bottom: solid 1px;
   margin: 1rem 0;
+}
+
+.taverne .column-text {
+  -moz-column-count: 1;
+       column-count: 1;
+}
+@media (min-width: 768px) {
+  .taverne .column-text {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+@media (min-width: 992px) {
+  .taverne .column-text {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
 }
 
 .taverne #header-image {
@@ -221,6 +239,15 @@ body.taverne *:not(li) > hr {
   border: solid 1px #aaa;
   background-color: #fff;
 }
+.taverne .skill-tree-viewer #loading-indicator {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.taverne .skill-tree-viewer #loading-indicator.active {
+  display: block;
+}
 .taverne .skill-tree-viewer h2 {
   font-size: 1rem;
 }
@@ -301,6 +328,51 @@ body.taverne *:not(li) > hr {
   padding: 2px 16px;
   font-weight: bold;
 }
+@media print {
+  .taverne .skill-tree-viewer {
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    max-width: 20cm;
+    min-height: 27cm;
+  }
+  .taverne .skill-tree-viewer .no-print {
+    display: none;
+  }
+  .taverne .skill-tree-viewer .dropdown {
+    display: none;
+  }
+  .taverne .skill-tree-viewer .btn {
+    display: none;
+  }
+  .taverne .skill-tree-viewer .value-container {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .taverne .skill-tree-viewer .available-points-container {
+    display: none;
+  }
+  .taverne .skill-tree-viewer input[type=checkbox] {
+    border: none;
+  }
+  .taverne .skill-tree-viewer input:checked:after {
+    content: "✅";
+    position: absolute;
+    margin-left: -4px;
+    margin-top: -7px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+}
+
+.taverne .magic-form {
+  display: none;
+}
+.taverne #character-generate-trigger {
+  display: none;
+}
 
 .taverne .card {
   border: var(--card-border-width) solid var(--card-border-color);
@@ -329,4 +401,66 @@ body.taverne *:not(li) > hr {
 }
 .taverne #loader.active {
   display: flex;
+}
+
+.taverne .sheet {
+  max-width: 21cm;
+  min-height: 29.7cm;
+  margin: auto;
+  padding: 0.5cm;
+  border: solid 1px #aaa;
+  background-color: #fff;
+  color: #000;
+}
+.taverne .sheet h2 {
+  color: #44a;
+}
+.taverne .sheet .border {
+  border: solid 1px #000;
+}
+.taverne .sheet .border-left {
+  border-left: solid 1px #000;
+}
+.taverne .sheet .amo-container {
+  display: flex;
+  gap: 0.1cm;
+}
+.taverne .sheet .amo-container .amo {
+  border: solid 1px #000;
+  height: 0.5cm;
+  width: 0.5cm;
+}
+@media print {
+  .taverne .sheet {
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    max-width: 20cm;
+    min-height: 27cm;
+  }
+  .taverne .sheet .no-print {
+    display: none;
+  }
+}
+
+.taverne table.datatable thead th {
+  color: #fff !important;
+}
+.taverne .select2-results__option {
+  color: #000;
+}
+.taverne .select2-selection__choice__display {
+  color: #000;
+}
+@media print {
+  .taverne .dt-column-order {
+    display: none !important;
+  }
+  .taverne .dt-layout-cell.dt-layout-start,
+  .taverne .dt-layout-cell.dt-layout-end {
+    display: none !important;
+  }
+  .taverne .no-print {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

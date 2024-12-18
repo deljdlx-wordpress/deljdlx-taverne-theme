@@ -1,0 +1,49 @@
+.taverne {
+    .sheet {
+        max-width: 21cm;
+        min-height: 29.7cm;
+
+        margin: auto;
+        padding: 0.5cm;
+        border: solid 1px #aaa;
+        background-color: #fff;
+
+        color: #000;
+
+        h2 {
+            color: #44a;
+        }
+
+        .border {
+            border: solid 1px #000;
+        }
+
+        .border-left {
+            border-left: solid 1px #000;
+        }
+
+        .amo-container {
+            display: flex;
+            gap: 0.1cm;
+            .amo {
+                border: solid 1px #000;
+                height: 0.5cm;
+                width: 0.5cm;
+            }
+        }
+
+
+        // print css
+        @media print {
+            padding: 0;
+            border: none;
+            background-color: #fff;
+            max-width: 20cm;
+            min-height: 27cm;
+
+            .no-print {
+                display: none;
+            }
+        }
+    }
+}
